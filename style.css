@@ -1,0 +1,39 @@
+body {
+    margin: 5px;
+}
+
+.bundesländer-box {
+    display: block;
+    text-decoration: none;
+    border: 5px solid lightgray;
+    color: black;
+    padding: 10px;
+    width: calc(33% - 10px);
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.bundesländer-box:hover {
+    border: 5px solid gray;
+}
+
+.text-gray {
+    color: lightgray;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 800px) {
+    .bundesländer-box {
+        width: calc(50% - 10px);
+    }
+}
+
+@media(max-width: 500px) {
+    .bundesländer-box {
+        width: calc(100% - 10px);
+    }
+}
